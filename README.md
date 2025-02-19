@@ -100,7 +100,21 @@ Each servo operates with three wires:
 To supply power, the breadboard is first connected to the Arduino board using male-to-male wires, linking the GND and 5V pins (since the servos require 5V).
 Finally, the signal wires of the servos are connected to the digital pins of the Arduino board, allowing for individual control of each motor.
 
-MPS + ARDUINO...
+The wiring for Arduino-Texas Instrument communication begins by connecting a logical level shifter to the breadboard. This component is essential for transmitting signals between boards operating at different voltage levels:
+- Texas Instrument works at 3.3V.
+- Arduino operates at 5V.
+1️. Powering the Breadboard
+   - Connect the 5V output from Arduino to one of the breadboard's power rails.
+   - Connect the 3.3V output from Texas Instrument to a separate power rail.
+   - Ensure both devices share a common ground (GND) on the breadboard.
+2️. Connecting the Logical Level Shifter
+   - LV3 pin → Connect to pin 3.2 of the Texas Instrument.
+   - GND pins → Connect both to the 3.3V and 5V sides of the level shifter.
+   - LV (Low Voltage) pin → Connect to 3.3V (power from Texas Instrument).
+   - HV4 pin → Connect to pin 1 of the Arduino.
+   - HV (High Voltage) pin → Connect to 5V (power from Arduino).
+   - Pin 0 of the Arduino → Connect to pin 2.3 of the Texas Instrument.
+This setup ensures correct signal voltage conversion, allowing reliable communication between the two boards without risking damage due to voltage mismatches. 
 
 ### Setting up the Arduino Software
 
