@@ -72,10 +72,6 @@ pip install pyserial
 pip install threading
 ```
 
-## Project Layout
-
-<!--=========================================================================-->
-
 ## Getting Started
 <!--=========================================================================-->
 
@@ -284,6 +280,11 @@ This mode allows the robotic hand to replicate the user's finger movements in re
   3. Adjust the joystick position to change the angle of the selected finger.
   4. To exit this mode, perform a left shift with the joystick.
   5. Once a mode is selected, the Texas Instruments board sends the commands to the Arduino,     which then controls the servomotors accordingly.
+
+## Link to PowerPoint and Youtube video
+<!--=========================================================================-->
+- Youtube
+- Slides
 
 ## Team Members
 <!--=========================================================================-->
