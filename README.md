@@ -74,81 +74,6 @@ pip install threading
 
 ## Project Layout
 
-M.I.M.E.H/  
-├── Assets/             # Contains logos and images  
-│   └── Logos/  
-│       └── mini_logo.jpg  
-├── Arduino/            # Contains Arduino code  
-│   └── controller.py   # Manages serial communication with Arduino  
-├── Dynamics/           # Contains logic for hand management  
-│   └── hand.py         # Defines the `Hand` class for landmark detection  
-├── Processing/         # Contains modules for video processing  
-│   └── video_processing.py  # Manages the video stream processing  
-├── Recording/          # Contains modules for video recording  
-│   └── rec.py          # Defines the `FoulRecorder` class for signal recording  
-├── signal_detection/   # Contains modules for specific signal detection  
-│   └── peace.py        # Example of "peace" signal detection  
-├── main.py             # Main file to execute the program  
-├── requirements.txt    # List of Python dependencies  
-└── README.md           # This file
-
-* **`Assets/`**: Contains resources like logos and images used in the graphical interface.  
-* **`Arduino/`**: Contains scripts and code for communication with the Arduino board.  
-    * `controller.py`: Manages serial communication with Arduino to send commands to the servos. Includes functions to initialize serial communication, send generic commands, and set servo angles [1, 2].  
-* **`Dynamics/`**: Contains the logic for managing and calculating the dynamics of the hand.  
-    * `hand.py`: Defines the `Hand` class, which receives hand landmark points from MediaPipe and calculates the necessary angles to control the servos. Also includes functions to determine if the hand is open, closed, or in specific positions [3-9].  
-* **`Processing/`**: Contains scripts for processing the video stream.  
-    * `video_processing.py`: Contains the `process_video` function which handles video stream acquisition from a webcam or file, detects hands using MediaPipe, and calls signal detection functions [1].  
-* **`Recording/`**: Contains scripts for recording videos of detected signals.  
-    * `rec.py`: Defines the `FoulRecorder` class, which handles video recording of detected signals. It allows starting, stopping, and saving recordings, keeping a buffer of recent frames [10-14].  
-* **`signal_detection/`**: Contains scripts for detecting specific signals.  
-    * `peace.py`: Contains the `peace` function, which detects the "peace" gesture (two fingers up) and starts/stops the corresponding video recording [15, 16].  
-* **`main.py`**: The main file to execute the graphical interface and start the detection process [1, 17-24].  
-* **`requirements.txt`**: List of Python libraries required to run the project.
-
-## How It Works
-
-1. **Initialization:**
-    * The `main.py` program starts the graphical interface and attempts to connect to Arduino through the specified serial port [17, 18].  
-    * A separate thread is started to listen for commands from Arduino [23].  
-2. **Video Detection:**
-    * The `process_video` function in `video_processing.py` acquires the video stream from the webcam or a file [25, 26].  
-    * MediaPipe detects hands in the video stream and provides landmark points [26, 27].  
-3. **Gesture Processing:**
-    * The `Hand` class in `hand.py` uses the landmarks to calculate finger angles and determine the hand's position [4, 5].  
-    * Functions in the `signal_detection` package (e.g., `peace.py`) use the information from the `Hand` class to detect specific gestures [15, 16].  
-4. **Arduino Control:**
-    * The `set_servo_angles` function in `controller.py` sends commands to Arduino to control the servos based on the detected gestures [28].  
-5. **Video Recording:**
-    * The `FoulRecorder` class in `rec.py` records videos of detected gestures, categorizing them by signal type [10, 14].  
-6. **Interaction with Arduino:**
-    * The program is designed to receive commands from Arduino, such as starting video processing or updating the displayed status in the interface [21, 22].  
-    * Arduino sends the command "1" to start video processing and "2" to update the status label [22].
-
-### Usage
-
-1. **Run the `main.py` file:**
-
-    ```bash
-    python main.py
-    ```
-
-2. **Interact with the graphical interface:**
-
-    The interface displays the system status and any messages.
-
-3. **Position your hand in front of the webcam:**
-
-    Ensure that the hand is clearly visible.
-
-4. **Perform supported gestures:**
-
-    The system will detect the gestures and control the robotic hand.
-
-5. **Check video recordings:**
-
-    The videos of the detected gestures will be saved in the `Recording` folder.
-
 <!--=========================================================================-->
 
 ## Getting Started
@@ -184,6 +109,7 @@ MPS + ARDUINO...
 ### Setting up PyCharm
 #### Project Layout
 
+```
 M.I.M.E.H/  
 ├── Assets/             # Contains logos and images  
 │   └── Logos/  
@@ -201,6 +127,7 @@ M.I.M.E.H/
 ├── main.py             # Main file to execute the program  
 ├── requirements.txt    # List of Python dependencies  
 └── README.md           # This file
+```
 
 * **`Assets/`**: Contains resources like logos and images used in the graphical interface.  
 * **`Arduino/`**: Contains scripts and code for communication with the Arduino board.  
