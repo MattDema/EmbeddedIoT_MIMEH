@@ -119,8 +119,8 @@ To ensure proper functionality of the robotic hand, follow these steps to set up
    - Go to Tools → Port and select the COM port associated with your Arduino board.
 4. Upload the Firmware
    - Open the Arduino project file (.ino).
-   - Verify the code by clicking the ✔ (Check) button.
-   - Upload it to the board by clicking the ➡ (Upload) button.
+   - Verify the code by clicking the Verify (Check) button.
+   - Upload it to the board by clicking the (Upload) button.
 5️. Check Serial Communication
    - Open Serial Monitor (Tools → Serial Monitor) and set the baud rate to match the one in          your code (e.g., 9600).
    - Ensure that the board receives and sends signals correctly.
