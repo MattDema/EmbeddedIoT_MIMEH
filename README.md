@@ -141,6 +141,7 @@ To ensure proper functionality of the robotic hand, follow these steps to set up
 To ensure the proper functionality of the Texas Instruments board, follow these steps to configure Code Composer Studio (CCS) with the required libraries.
 
 1. Configure Include Paths
+   
    The Include Paths must be set to allow the compiler to locate necessary header files.
 
    Steps:
