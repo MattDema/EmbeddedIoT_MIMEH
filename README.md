@@ -174,6 +174,14 @@ To ensure the proper functionality of the Texas Instruments board, follow these 
    - Ensure there are no compilation errors.
    - Upload the compiled program to the Texas Instruments board.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c8b1cf5a-d77f-490d-ad5f-91538c1779a0" alt="CCSLinker" width="500">
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/aa6e57e8-16c4-4fc0-8974-f432fd40a494" alt="CCScompiler" width="500">
+</div>
+
 ### Setting up PyCharm
 #### Project Layout
 
