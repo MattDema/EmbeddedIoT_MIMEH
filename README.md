@@ -1,6 +1,10 @@
 # EmbeddedIoT_MIMEH
 M.I.M.E.H Project for Embedded Software for the Internet of Things
 
+> **Note:** To view this file in preview mode, open it in a text editor like Visual Studio Code, Atom, or an online Markdown viewer such as [Dillinger](https://dillinger.io/). Otherwise, if the project is opened in your compiler, such as PyCharm, the preview will be displayed automatically.
+
+![MIMEH Logo](./Assets/Loghi/logo.jpg)
+
 <!--=========================================================================-->
 
 ## Idea of the project
@@ -28,9 +32,45 @@ The Texas Instruments board send the inputs for the Arduino board which selects 
 
 - Arduino IDE
 - Code Composer Studio
-- PyCharm
-- Media pipe
-- ...
+#### Software Requirements - Libraries Python
+
+For optimal program performance, it is recommended to use a machine with a dedicated and powerful graphics card. However, the program can also run on less powerful systems. The required libraries are:
+
+- `cv2`
+- `mediapipe`
+- `importlib`
+- `os`
+- `tkinter`
+- `POL`
+- `sys`
+- `time`
+- `math`
+- `collections`
+- `pydantic`
+- `numpy`
+- `pyserial`
+- `threading`
+
+#### Library Installation
+
+It is recommended to install all these libraries before running the program to avoid errors during runtime. Below are the commands to install the libraries via `pip`:
+
+```bash
+pip install opencv-python
+pip install mediapipe
+pip install importlib-metadata
+pip install python-os
+pip install tk
+pip install python-polling
+pip install sys
+pip install time
+pip install math
+pip install collections
+pip install pydantic
+pip install numpy
+pip install pyserial
+pip install threading
+```
 
 ## Project Layout
 <!--=========================================================================-->
