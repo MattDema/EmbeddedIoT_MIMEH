@@ -88,7 +88,7 @@ This mode allows the robotic hand to replicate the user's finger movements in re
 
   Steps:
 
-    1. Select the Manual Control Mode from the menu on the Texas Instruments board.
+  1. Select the Manual Control Mode from the menu on the Texas Instruments board.
   2. Use the joystick to navigate through the menu and select the finger to move.
   3. Adjust the joystick position to change the angle of the selected finger.
   4. To exit this mode, perform a left shift with the joystick.
