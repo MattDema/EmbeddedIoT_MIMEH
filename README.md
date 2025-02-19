@@ -104,6 +104,27 @@ MPS + ARDUINO...
 
 ### Setting up the Arduino Software
 
+To ensure proper functionality of the robotic hand, follow these steps to set up Arduino IDE and configure the necessary dependencies:
+
+1. Install Arduino IDE
+   - Download and install the latest version of Arduino IDE from the official website: Arduino      Download.
+   - Connect your Arduino board to the computer using a USB cable.
+2. Install the Servo Library
+   This project requires the Servo library to control the servomotors.
+   - Open Arduino IDE and go to Sketch → Include Library → Manage Libraries.
+   - In the Library Manager, search for Servo.
+   - Select the Arduino Servo Library and click Install.
+3. Select the Correct Board and Port
+   - Navigate to Tools → Board and select the correct Arduino model (e.g., Arduino Uno, Mega,       etc.).
+   - Go to Tools → Port and select the COM port associated with your Arduino board.
+4. Upload the Firmware
+   - Open the Arduino project file (.ino).
+   - Verify the code by clicking the ✔ (Check) button.
+   - Upload it to the board by clicking the ➡ (Upload) button.
+5️. Check Serial Communication
+   - Open Serial Monitor (Tools → Serial Monitor) and set the baud rate to match the one in          your code (e.g., 9600).
+   - Ensure that the board receives and sends signals correctly.
+
 ### Setting up the Texas Instrument 
 
 ### Setting up PyCharm
