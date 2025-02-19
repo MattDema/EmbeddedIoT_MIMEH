@@ -61,9 +61,49 @@ Finally, the signal wires of the servos are connected to the digital pins of the
 
 MPS + ARDUINO...
 
-### Setting up the Software
+### Setting up the Arduino Software
+
+### Setting up the Texas Instrument 
+
+### Setting up PyCharm
 
 ## User guide
 <!--=========================================================================-->
 
+The robotic hand operates in two different modes, which can be selected using the Texas Instruments board. Follow the steps below to use each mode:
 
+1. Hand Tracking Mode (Mediapipe)
+This mode allows the robotic hand to replicate the user's finger movements in real time using MediaPipe and a computer webcam.
+
+Steps:
+
+Connect the Texas Instruments board and the Arduino board to the computer.
+Open PyCharm and run the Python script responsible for hand tracking.
+The script establishes a serial communication with the Arduino.
+The MediaPipe library tracks the user’s hand movements through the webcam.
+The robotic hand mimics the movements detected by MediaPipe.
+2. Manual Control Mode (Joystick)
+This mode allows for individual finger control using the joystick on the Texas Instruments board.
+
+Steps:
+
+Select the Manual Control Mode from the menu on the Texas Instruments board.
+Use the joystick to navigate through the menu and select the finger to move.
+Adjust the joystick position to change the angle of the selected finger.
+To exit this mode, perform a left shift with the joystick.
+Once a mode is selected, the Texas Instruments board sends the commands to the Arduino, which then controls the servomotors accordingly.
+
+## Team Members
+<!--=========================================================================-->
+
+The project was developed as a team effort, with the code divided into different areas, including hand construction, Arduino programming, and Texas Instruments development.
+
+- Matthew De Marco
+  - Contributed to the Texas Instruments program, developing the operating menu and integrating     the Python configuration with the Texas Instruments configuration.
+- Andrea Lo Iacono
+  - Worked on hand construction and the Python-Arduino integration.
+  - Remodeled 3D files for the 3D printing of hand components.
+- Andrea Pezzo
+  - Contributed to hand construction and Arduino implementation.
+  - Assisted in both the Python integration and Texas Instruments development.
+    
