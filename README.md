@@ -121,11 +121,48 @@ To ensure proper functionality of the robotic hand, follow these steps to set up
    - Open the Arduino project file (.ino).
    - Verify the code by clicking the Verify (Check) button.
    - Upload it to the board by clicking the (Upload) button.
+   
 5️. Check Serial Communication
    - Open Serial Monitor (Tools → Serial Monitor) and set the baud rate to match the one in          your code (e.g., 9600).
    - Ensure that the board receives and sends signals correctly.
 
 ### Setting up the Texas Instrument 
+
+To ensure the proper functionality of the Texas Instruments board, follow these steps to configure Code Composer Studio (CCS) with the required libraries.
+
+1. Configure Include Paths
+   The Include Paths must be set to allow the compiler to locate necessary header files.
+
+   Steps:
+   - Open CCS and navigate to Project Properties (Project → Properties).
+   - Go to Build → Arm Compiler → Include Options.
+   - Add the following paths to the Include search path (--include_path, -I):
+     - ${CCS_BASE_ROOT}/arm/include
+     - C:\ti\simplelink_msp432p4_sdk_3_40_01_02\source
+     - ${CCS_BASE_ROOT}/arm/include/CMSIS
+     - ${PROJECT_ROOT}
+     - ${CG_TOOL_ROOT}/include
+     - Click Apply and Close to save the changes.
+
+2️. Configure Library Paths
+   The library search paths must be set for linking the required .a files.
+
+   Steps:
+   - In the Project Properties, navigate to Build → Arm Linker → File Search Path.
+   - Under Include library file or command file as input (--library, -l), ensure the following    libraries are added:
+     - libc.a
+     - C:\ti\simplelink_msp432p4_sdk_3_40_01_02\source\ti\grlib\lib\ccs\m4\grlib.a
+     - C:\ti\simplelink_msp432p4_sdk_3_40_01_02\source\ti\devices\msp432p4xx\driverlib                \ccs\msp432p4xx_driverlib.lib
+   - Under Add <dir> to library search path (--search_path, -i), add:
+      - ${CCS_BASE_ROOT}/arm/include
+      - ${CG_TOOL_ROOT}/lib
+      - ${CG_TOOL_ROOT}/include
+   - Click Apply and Close to save the changes.
+
+3️. Build and Upload the Code
+   - Click Build (Project → Build Project).
+   - Ensure there are no compilation errors.
+   - Upload the compiled program to the Texas Instruments board.
 
 ### Setting up PyCharm
 #### Project Layout
