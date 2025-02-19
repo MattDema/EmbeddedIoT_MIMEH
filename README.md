@@ -292,7 +292,7 @@ This mode allows the robotic hand to replicate the user's finger movements in re
 ## Link to PowerPoint and Youtube video
 <!--=========================================================================-->
 - Youtube
-- Slides
+- Slides: https://drive.google.com/drive/folders/12m9JKmYZS2XSclc8U5HIM1ZqBs11cIXb?usp=drive_link
 
 ## Team Members
 <!--=========================================================================-->
