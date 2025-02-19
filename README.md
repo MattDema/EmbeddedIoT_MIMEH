@@ -75,23 +75,24 @@ The robotic hand operates in two different modes, which can be selected using th
 1. Hand Tracking Mode (Mediapipe)
 This mode allows the robotic hand to replicate the user's finger movements in real time using MediaPipe and a computer webcam.
 
-Steps:
-
-Connect the Texas Instruments board and the Arduino board to the computer.
-Open PyCharm and run the Python script responsible for hand tracking.
-The script establishes a serial communication with the Arduino.
-The MediaPipe library tracks the user’s hand movements through the webcam.
-The robotic hand mimics the movements detected by MediaPipe.
+  Steps:
+  1. Connect the Texas Instruments board and the Arduino board to the computer.
+  2. Open PyCharm and run the Python script responsible for hand tracking.
+  3. The script establishes a serial communication with the Arduino.
+  4. The MediaPipe library tracks the user’s hand movements through the webcam.
+  5. The robotic hand mimics the movements detected by MediaPipe.
+     
 2. Manual Control Mode (Joystick)
-This mode allows for individual finger control using the joystick on the Texas Instruments board.
+   
+  This mode allows for individual finger control using the joystick on the Texas Instruments     board.
 
-Steps:
+  Steps:
 
-Select the Manual Control Mode from the menu on the Texas Instruments board.
-Use the joystick to navigate through the menu and select the finger to move.
-Adjust the joystick position to change the angle of the selected finger.
-To exit this mode, perform a left shift with the joystick.
-Once a mode is selected, the Texas Instruments board sends the commands to the Arduino, which then controls the servomotors accordingly.
+    1. Select the Manual Control Mode from the menu on the Texas Instruments board.
+  2. Use the joystick to navigate through the menu and select the finger to move.
+  3. Adjust the joystick position to change the angle of the selected finger.
+  4. To exit this mode, perform a left shift with the joystick.
+  5. Once a mode is selected, the Texas Instruments board sends the commands to the Arduino,     which then controls the servomotors accordingly.
 
 ## Team Members
 <!--=========================================================================-->
