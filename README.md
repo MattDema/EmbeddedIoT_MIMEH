@@ -22,7 +22,7 @@ The Texas Instruments board send the inputs for the Arduino board which selects 
 
 ### Hardware Requirements
 
-- Texas instrument Board
+- Texas Instrument MSP432P401R Launchpad and Educational BoosterPack II
 - Arduino UNO R4 Minima Board
 - Full set of cables (male-to-male, male-to-female)
 - 5x Servomotors
@@ -32,6 +32,7 @@ The Texas Instruments board send the inputs for the Arduino board which selects 
 
 - Arduino IDE
 - Code Composer Studio
+- Pycharm
 #### Software Requirements - Libraries Python
 
 For optimal program performance, it is recommended to use a machine with a dedicated and powerful graphics card. However, the program can also run on less powerful systems. The required libraries are:
