@@ -15,7 +15,7 @@ The hand structure is composed of 3D-printed components, while movement is contr
 The first uses the mediapipe library OpenCV to track the movements of the user fingers, captured by the computer webcam.
 The Manual Control Mode is used to move the fingers, singularly changing the angle value of the related servomotor using input joysticks.
 Mode selection is controlled by a Texas Instrument board, which displays a menu on its integrated display. It's possible to move within the menu using the joystick and button sensors.
-The Texas Instruments board send the inputs for the Arduino board which selects and moves the servomotors aaccordingly.
+The Texas Instruments board send the inputs for the Arduino board which selects and moves the servomotors accordingly.
 
 ## Requirements
 <!--=========================================================================-->
