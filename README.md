@@ -484,7 +484,7 @@ The **robotic hand** operates in ***two different modes***, which can be selecte
 
 <!--=========================================================================-->
 - [YouTube Video](https://youtu.be/Hg43R4kENIY)
-- [Presentation-PDF](Assets/MIMEH - Presentation/MIMEH - Embedded Sfotware for the Internet of Things Project - De Marco Matthew, Lo Iacono Andrea, Pezzo Andrea.pdf)
+- [Presentation-PDF](https://github.com/MattDema/EmbeddedIoT_MIMEH/blob/0507d463df15e79ee8f209244c31c05f9a32046a/Assets/MIMEH%20-%20Presentation/MIMEH%20-%20Embedded%20Sfotware%20for%20the%20Internet%20of%20Things%20Project%20-%20De%20Marco%20Matthew%2C%20Lo%20Iacono%20Andrea%2C%20Pezzo%20Andrea.pdf)
 
 ## Team Members and Contributions 🧑‍🤝‍🧑
 
