@@ -1,6 +1,5 @@
 # M.I.M.E.H Project for Embedded Software for the Internet of Things
 
----
 
 ***Assoc. prof. <a href="https://webapps.unitn.it/du/it/Persona/PER0212812/Didattica">Yildrim Kasim Sinan</a>***
 
@@ -15,11 +14,11 @@
 
 ---
 
-<p align="center">
+<div align="center">
 
   ![License](https://img.shields.io/github/license/MattDema/EmbeddedIoT_MIMEH?style=for-the-badge&logoSize=auto&labelColor=blue&color=black)  ![Version](https://img.shields.io/badge/Pre-RELEASE?style=for-the-badge&logo=Assets%2FLoghi%2Fmini_logo.jpg&logoSize=auto&label=MIMEH%20version&labelColor=white&color=black)  ![Stars](https://img.shields.io/github/stars/MattDema/EmbeddedIoT_MIMEH?style=for-the-badge&logo=github&logoColor=black&logoSize=auto&labelColor=gold&color=black)  ![Contributors](https://img.shields.io/github/contributors/MattDema/EmbeddedIoT_MIMEH?style=for-the-badge&logo=github&logoColor=white&logoSize=auto&label=contributors&labelColor=green&color=black)  ![Issues](https://img.shields.io/github/issues/MattDema/EmbeddedIoT_MIMEH?style=for-the-badge&logoSize=auto&label=Issues&labelColor=red&color=black)  ![Repo Size](https://img.shields.io/github/repo-size/MattDema/EmbeddedIoT_MIMEH?style=for-the-badge&labelColor=purple&color=black)  
-</p>
 
+</div>
 --- 
 
 <div align="justify">
